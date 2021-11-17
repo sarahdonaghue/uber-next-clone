@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 import tw from "tailwind-styled-components"
-import Map from '../components/Map'
+import Map from './components/Map'
 import { useRouter } from 'next/dist/client/router'
-import RideSelector from '../components/RideSelector'
+import RideSelector from './components/RideSelector'
 import Link from 'next/link'
 
 const Confirm = () => {

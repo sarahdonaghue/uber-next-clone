@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react'
-import tw from "tailwind-styled-components"
-import Link from 'next/link'
-import axios from 'axios'
+import { useState, useEffect } from 'react';
+import tw from "tailwind-styled-components";
+import Link from 'next/link';
+import axios from 'axios';
 
 const Search = () => {
 

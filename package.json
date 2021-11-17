@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "axios": "^0.24.0",
     "firebase": "^9.4.1",
     "mapbox-gl": "^2.6.0",
     "next": "12.0.4",
