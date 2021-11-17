@@ -1,19 +1,24 @@
-import { initializeApp } from "firebase/app"
-import { GoogleAuthProvider, getAuth } from 'firebase/auth'
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { GoogleAuthProvider, getAuth } from 'firebase/auth';
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyAbs_WvUkkdejeV5O27jIIW9Vmdmyqcjf8",
-  authDomain: "uber-next-clone-909d3.firebaseapp.com",
-  projectId: "uber-next-clone-909d3",
-  storageBucket: "uber-next-clone-909d3.appspot.com",
-  messagingSenderId: "112403930853",
-  appId: "1:112403930853:web:31c6550acfd630ec573e0c"
+  apiKey: "AIzaSyCxNXNGx325fFtwiCZiwzCtoRGMAWsHHL0",
+  authDomain: "uber-next-live-cb6ff.firebaseapp.com",
+  projectId: "uber-next-live-cb6ff",
+  storageBucket: "uber-next-live-cb6ff.appspot.com",
+  messagingSenderId: "794665403437",
+  appId: "1:794665403437:web:b4904b689d1945618264a4",
+  measurementId: "G-3Q5M27TPTF"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const provider = new GoogleAuthProvider()
-const auth = getAuth()
+const provider = new GoogleAuthProvider();
+const auth = getAuth();
 
-export { app, provider, auth }
+export { app, provider, auth};

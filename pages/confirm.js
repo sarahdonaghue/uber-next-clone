@@ -91,7 +91,7 @@ const ConfirmButton = tw.div`
 `
 
 const ButtonContainer = tw.div`
-    bg-white absolute z-10 rounded-full top top-2 left-2 cursor-pointer shadow-md
+    bg-white absolute z-10 rounded-full top top-4 left-4 cursor-pointer shadow-md
 `
 
 const BackButton = tw.img`

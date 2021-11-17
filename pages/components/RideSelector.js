@@ -8,9 +8,9 @@ const RideSelector = ({pickupCoordinates, dropoffCoordinates}) => {
 
     useEffect(() => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
-        rideDuration = fetch(
-            `https://api.mapbox.com/directions/v5/mapbox/driving/${pickupCoordinates[0]},${pickupCoordinates[1]};${dropoffCoordinates[0]},${dropoffCoordinates[1]}?access_token=pk.eyJ1IjoiZGVyaWJvc3MiLCJhIjoiY2t2bHVjY3J1OTk5NjMwczdjM3YyajdjaSJ9.FcnIkN3EgvfR1Q2CY80slg`
-        )
+        rideDuration = fetch( 
+            `https://api.mapbox.com/directions/v5/mapbox/directions${pickupCoordinates[0]}, ${pickupCoordinates[1]};${dropoffCoordinates[0]}, ${dropoffCoordinates[1]}?access_token=pk.eyJ1Ijoic2FyYWhkb25hZ2h1ZSIsImEiOiJja3ZtcXZtbHcweGliMm91cHpleTcwcmg5In0.TkRog74JG_prwqmW7j1ZQA`
+            )
             .then((res => res.json()))
             .then(data => {
             setRideDuration(data.routes && data.routes[0].duration / 100)
@@ -19,7 +19,7 @@ const RideSelector = ({pickupCoordinates, dropoffCoordinates}) => {
 
     return (
         <Wrapper>
-            <Title>Choose a ride, or swipe up for more</Title>
+            <Title>Choose a ride, or swipe up for more!</Title>
             <CarList>
                 {carList.map((car, index) => [
                     <Car key={index}>

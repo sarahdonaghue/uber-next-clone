@@ -1,15 +1,14 @@
 import { useEffect, useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
-import tw from "tailwind-styled-components"
-import Map from '../components/Map'
+import tw from 'tailwind-styled-components'
+import Map from './components/Map'
 import Link from 'next/link'
 import { auth } from '../firebase'
 import { onAuthStateChanged, signOut } from 'firebase/auth'
 import { useRouter } from 'next/router'
 
 export default function Home() {
-   // what are components? Reusable ui element
   const [user, setUser] = useState(null)
   const router = useRouter()
 
@@ -25,8 +24,7 @@ export default function Home() {
         router.push('/login')
       }
     })
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, )
 
   return (
     <Wrapper>
